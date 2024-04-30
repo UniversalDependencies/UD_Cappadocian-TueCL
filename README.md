@@ -1,16 +1,11 @@
 # Summary
 
-... 1-2 sentences (see [release checklist](http://universaldependencies.org/release_checklist.html#the-readme-file) for README guidelines) ...
-
+This is a treebank of Pharasiot, a critically endangered Greek dialect
+originally spoken near Cappadocia.
+The source material is fairy tales collected during field study.
 
 # Introduction
 
-...
-
-
-# Acknowledgments
-
-...
 
 ## References
 
@@ -21,7 +16,6 @@
 
 * 2024-05-15 v2.14
   * Initial release in Universal Dependencies.
-
 
 <pre>
 === Machine-readable metadata (DO NOT REMOVE!) ================================
