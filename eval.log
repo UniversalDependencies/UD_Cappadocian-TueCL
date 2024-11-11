@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 78ce4b21495c6e4c17a7b07925bec1267d833d14
+commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 09:21:16 2024 +0200
+Date:   Sun Nov 10 10:33:45 2024 +0100
 Evaluating the following revision of UD_Cappadocian-TueCL:
-commit c67d6819e8a86cf509ab59b6186da135c3dadfe5
+commit 23df4f270af2fcde362964ff2478fe8f8d5e93ef
+Merge: 17ffdae 3e37c2e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 10:17:43 2024 +0200
 Size: counted 4118 of 4118 words (nodes).
 Size: min(0, log((N/1000)**2)) = 2.8307352172112.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -25,6 +25,9 @@ Udapi: found 119 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 4118 words.
 Genres: found 1 out of 17 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang cpg --max-err=10 UD_Cappadocian-TueCL/cpg_tuecl-ud-test.conllu
+[Line 2171 Sent Fairytale2.13 Node 10]: [L3 Warning leaf-det] 'det' not expected to have children (10:το:det --> 2:τζαναβάρα:nsubj)
+[Line 4129 Sent Fairytale5.67 Node 10]: [L3 Warning leaf-det] 'det' not expected to have children (10:το:det --> 8:τα:expl)
+Warnings: 2
 *** PASSED ***
 Validity: 1
 (weight=0.0769230769230769) * (score{features}=1) = 0.0769230769230769
