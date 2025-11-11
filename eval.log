@@ -1,11 +1,15 @@
 Running the following version of UD tools:
-commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
+commit 26e6c87a2f518322d15901a351199b6be6569062
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri May 9 21:07:42 2025 +0200
+Date:   Fri Nov 7 15:39:58 2025 +0100
 Evaluating the following revision of UD_Cappadocian-TueCL:
-commit 6d62d8a3324fcee00f9c43e56880fd71280af0b4
+commit 0f5552f8b5c20c4c9cfcf746a26edded50c9de3b
+Merge: 0867308 47d033a
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Mon Nov 11 15:04:03 2024 +0100
+CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
+Language-treebank code (from CoNLL-U file name) = 'cpg_tuecl'
+Language code (from CoNLL-U file name) = 'cpg'
+Found the following data files: cpg_tuecl-ud-test.conllu
 Size: counted 4118 of 4118 words (nodes).
 Size: min(0, log((N/1000)**2)) = 2.8307352172112.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -19,26 +23,35 @@ Features: 2376 out of 4118 total words have one or more features.
 Features: source of annotation (from README) factor is 1.
 Universal relations: 28 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 1.
-Udapi:
-               TOTAL        105
-Udapi: found 105 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 4118 words.
 Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang cpg --max-err=10 UD_Cappadocian-TueCL/cpg_tuecl-ud-test.conllu
-[Line 2171 Sent Fairytale2.13 Node 10]: [L3 Syntax leaf-det] 'det' not expected to have children (10:το:det --> 2:τζαναβάρα:nsubj)
-[Line 4129 Sent Fairytale5.67 Node 10]: [L3 Syntax leaf-det] 'det' not expected to have children (10:το:det --> 8:τα:expl)
-Syntax errors: 2
-*** FAILED *** with 2 errors
+[Line 48 Sent Fairytale1.3]: [L3 Warning pron-det-without-prontype] The word 'α' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 165 Sent Fairytale1.9]: [L3 Warning pron-det-without-prontype] The word 'άβο' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 207 Sent Fairytale1.10]: [L3 Warning pron-det-without-prontype] The word 'ατόνε' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 741 Sent Fairytale1.39]: [L3 Warning pron-det-without-prontype] The word 'πω' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 966 Sent Fairytale3.2]: [L3 Warning pron-det-without-prontype] The word 'ο' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1056 Sent Fairytale3.9]: [L3 Warning pron-det-without-prontype] The word 'τζ’' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1077 Sent Fairytale3.11]: [L3 Warning pron-det-without-prontype] The word 'Συ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 1107 Sent Fairytale3.12]: [L3 Warning pron-det-without-prontype] The word 'τα' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 1114 Sent Fairytale3.12]: [L3 Warning pron-det-without-prontype] The word 'τεϊ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 1121 Sent Fairytale3.13]: [L3 Warning verbform-fin-without-mood] Finite verb 'Είδεν' lacks the 'Mood' feature
+...suppressing further errors regarding Warning
+[Line 2171 Sent Fairytale2.13]: [L3 Syntax leaf-det] 'det' not expected to have children (10:το:det --> 2:τζαναβάρα:nsubj)
+[Line 4129 Sent Fairytale5.67]: [L3 Syntax leaf-det] 'det' not expected to have children (10:το:det --> 8:τα:expl)
+[Line 4297 Sent Fairytale5.76]: [L3 Syntax too-many-objects] Multiple direct objects [10, 20] ('τα', 'τζουφάλε') under the predicate 'δόσ’'.
+[Line 5234 Sent Fairytale6.13]: [L3 Syntax too-many-objects] Multiple direct objects [5, 7] ('dα', 'νομάτ') under the predicate 'ποίτζεν'.
+Syntax errors: 4
+Warnings: 58
+*** FAILED *** with 4 errors
 Exit code: 1
 Validity: 0.01
-(weight=0.0769230769230769) * (score{features}=1) = 0.0769230769230769
-(weight=0.0769230769230769) * (score{genres}=0.0555555555555556) = 0.00427350427350427
-(weight=0.0769230769230769) * (score{lemmas}=1) = 0.0769230769230769
-(weight=0.256410256410256) * (score{size}=0.204895447427338) = 0.0525372942121378
-(weight=0.0512820512820513) * (score{split}=0.01) = 0.000512820512820513
-(weight=0.0769230769230769) * (score{tags}=1) = 0.0769230769230769
-(weight=0.307692307692308) * (score{udapi}=0.745021855269548) = 0.229237493929092
-(weight=0.0769230769230769) * (score{udeprels}=0.756756756756757) = 0.0582120582120582
-(TOTAL score=0.575542401908843) * (availability=1) * (validity=0.01) = 0.00575542401908843
+(weight=0.111111111111111) * (score{features}=1) = 0.111111111111111
+(weight=0.111111111111111) * (score{genres}=0.0555555555555556) = 0.00617283950617284
+(weight=0.111111111111111) * (score{lemmas}=1) = 0.111111111111111
+(weight=0.37037037037037) * (score{size}=0.204895447427338) = 0.0758872027508657
+(weight=0.0740740740740741) * (score{split}=0.01) = 0.000740740740740741
+(weight=0.111111111111111) * (score{tags}=1) = 0.111111111111111
+(weight=0.111111111111111) * (score{udeprels}=0.756756756756757) = 0.0840840840840841
+(TOTAL score=0.500218200415197) * (availability=1) * (validity=0.01) = 0.00500218200415197
 STARS = 0
-UD_Cappadocian-TueCL	0.00575542401908843	0
+UD_Cappadocian-TueCL	0.00500218200415197	0
