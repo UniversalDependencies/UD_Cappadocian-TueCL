@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 26e6c87a2f518322d15901a351199b6be6569062
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri Nov 7 15:39:58 2025 +0100
+Date:   Tue May 5 17:01:41 2026 +0200
 Evaluating the following revision of UD_Cappadocian-TueCL:
-commit 0f5552f8b5c20c4c9cfcf746a26edded50c9de3b
-Merge: 0867308 47d033a
+commit e5e955a272248f4faec62d98e70880981c7f14bd
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Tue Nov 11 18:53:14 2025 +0100
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'cpg_tuecl'
 Language code (from CoNLL-U file name) = 'cpg'
@@ -25,24 +25,26 @@ Universal relations: 28 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 1.
 Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang cpg --max-err=10 UD_Cappadocian-TueCL/cpg_tuecl-ud-test.conllu
-[Line 48 Sent Fairytale1.3]: [L3 Warning pron-det-without-prontype] The word 'α' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 165 Sent Fairytale1.9]: [L3 Warning pron-det-without-prontype] The word 'άβο' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 207 Sent Fairytale1.10]: [L3 Warning pron-det-without-prontype] The word 'ατόνε' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 741 Sent Fairytale1.39]: [L3 Warning pron-det-without-prontype] The word 'πω' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 966 Sent Fairytale3.2]: [L3 Warning pron-det-without-prontype] The word 'ο' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 1056 Sent Fairytale3.9]: [L3 Warning pron-det-without-prontype] The word 'τζ’' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 1077 Sent Fairytale3.11]: [L3 Warning pron-det-without-prontype] The word 'Συ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 1107 Sent Fairytale3.12]: [L3 Warning pron-det-without-prontype] The word 'τα' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 1114 Sent Fairytale3.12]: [L3 Warning pron-det-without-prontype] The word 'τεϊ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 1121 Sent Fairytale3.13]: [L3 Warning verbform-fin-without-mood] Finite verb 'Είδεν' lacks the 'Mood' feature
-...suppressing further errors regarding Warning
-[Line 2171 Sent Fairytale2.13]: [L3 Syntax leaf-det] 'det' not expected to have children (10:το:det --> 2:τζαναβάρα:nsubj)
-[Line 4129 Sent Fairytale5.67]: [L3 Syntax leaf-det] 'det' not expected to have children (10:το:det --> 8:τα:expl)
-[Line 4297 Sent Fairytale5.76]: [L3 Syntax too-many-objects] Multiple direct objects [10, 20] ('τα', 'τζουφάλε') under the predicate 'δόσ’'.
-[Line 5234 Sent Fairytale6.13]: [L3 Syntax too-many-objects] Multiple direct objects [5, 7] ('dα', 'νομάτ') under the predicate 'ποίτζεν'.
-Syntax errors: 4
-Warnings: 58
-*** FAILED *** with 4 errors
+[Line 48 Sent Fairytale1.3]: [L3 WARNING pron-det-without-prontype] The word 'α' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 165 Sent Fairytale1.9]: [L3 WARNING pron-det-without-prontype] The word 'άβο' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 207 Sent Fairytale1.10]: [L3 WARNING pron-det-without-prontype] The word 'ατόνε' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 741 Sent Fairytale1.39]: [L3 WARNING pron-det-without-prontype] The word 'πω' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 966 Sent Fairytale3.2]: [L3 WARNING pron-det-without-prontype] The word 'ο' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1056 Sent Fairytale3.9]: [L3 WARNING pron-det-without-prontype] The word 'τζ’' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1077 Sent Fairytale3.11]: [L3 WARNING pron-det-without-prontype] The word 'Συ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 1107 Sent Fairytale3.12]: [L3 WARNING pron-det-without-prontype] The word 'τα' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 1114 Sent Fairytale3.12]: [L3 WARNING pron-det-without-prontype] The word 'τεϊ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 1121 Sent Fairytale3.13]: [L3 WARNING verbform-fin-without-mood] Finite verb 'Είδεν' lacks the 'Mood' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 2171 Sent Fairytale2.13]: [L3 SYNTAX leaf-det] 'det' not expected to have children (10:το:det --> 2:τζαναβάρα:nsubj)
+[Line 2573 Sent Fairytale2.37]: [L3 SYNTAX obl-should-be-nmod] The parent (node [4] 'σοιρίδι') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 4129 Sent Fairytale5.67]: [L3 SYNTAX leaf-det] 'det' not expected to have children (10:το:det --> 8:τα:expl)
+[Line 4297 Sent Fairytale5.76]: [L3 SYNTAX too-many-objects] Multiple direct objects [10, 20] ('τα', 'τζουφάλε') under the predicate 'δόσ’'.
+[Line 4936 Sent Fairytale5.104]: [L3 SYNTAX obl-should-be-nmod] The parent (node [7] 'τσάρι') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 5234 Sent Fairytale6.13]: [L3 SYNTAX too-many-objects] Multiple direct objects [5, 7] ('dα', 'νομάτ') under the predicate 'ποίτζεν'.
+Warnings: 56
+SYNTAX errors: 6
+*** FAILED *** with 6 errors
 Exit code: 1
 Validity: 0.01
 (weight=0.111111111111111) * (score{features}=1) = 0.111111111111111
