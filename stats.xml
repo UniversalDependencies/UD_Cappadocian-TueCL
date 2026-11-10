@@ -91,12 +91,12 @@
     <dep name="expl">16</dep>
     <dep name="iobj">37</dep>
     <dep name="mark">173</dep>
-    <dep name="nmod">189</dep>
+    <dep name="nmod">191</dep>
     <dep name="nsubj">219</dep>
     <dep name="nsubj:pass">8</dep>
     <dep name="nummod">46</dep>
     <dep name="obj">229</dep>
-    <dep name="obl">239</dep>
+    <dep name="obl">237</dep>
     <dep name="parataxis">55</dep>
     <dep name="punct">728</dep>
     <dep name="root">350</dep>

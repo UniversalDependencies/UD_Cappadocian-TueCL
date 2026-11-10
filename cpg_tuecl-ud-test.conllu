@@ -2570,7 +2570,7 @@
 4	σοιρίδι	χοιρίδι(ον)	NOUN	NOUN	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
 5	μο	με	ADP	ADP	_	7	case	_	_
 6	το	ο	DET	DET	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
-7	γουβάλι	γουβάλι	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	4	obl	_	_
+7	γουβάλι	γουβάλι	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	4	nmod	_	_
 8-9	σα	_	_	_	_	_	_	_	_
 8	σ	σε	ADP	ADP	_	10	case	_	_
 9	α	α	PRON	PRON	_	10	det	_	_
@@ -4933,7 +4933,7 @@
 2-3	στο	_	_	_	_	_	_	_	_
 2	σ	σε	ADP	ADP	_	4	case	_	_
 3	το	το	DET	DET	Case=Acc|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
-4	βράδι	βράδι	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	7	obl	_	_
+4	βράδι	βράδι	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	7	nmod	_	_
 5	του	το	PRON	PRON	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	4	nmod	_	_
 6	αν	αν	DET	DET	Case=Acc|Gender=Neut|Number=Sing	7	det	_	_
 7	τσάρι	τσάρι	NOUN	NOUN	Case=Acc|Gender=Neut|Number=Sing	1	obj	_	SpaceAfter=No
