@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
+commit 59781c63b5b1c2ba74cd2b965d93f371e1c9d36a
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue May 5 17:01:41 2026 +0200
+Date:   Tue Nov 10 13:08:27 2026 +0100
 Evaluating the following revision of UD_Cappadocian-TueCL:
-commit e5e955a272248f4faec62d98e70880981c7f14bd
+commit 2d86cee7b5b6e404fa7c6f20bfeaf53e0092e729
+Merge: 2829c3d 2cc6acf
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue Nov 11 18:53:14 2025 +0100
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'cpg_tuecl'
 Language code (from CoNLL-U file name) = 'cpg'
@@ -37,14 +37,12 @@ Genres: found 1 out of 18 known.
 [Line 1121 Sent Fairytale3.13]: [L3 WARNING verbform-fin-without-mood] Finite verb 'Είδεν' lacks the 'Mood' feature
 ...suppressing further messages regarding WARNING/MORPHO
 [Line 2171 Sent Fairytale2.13]: [L3 SYNTAX leaf-det] 'det' not expected to have children (10:το:det --> 2:τζαναβάρα:nsubj)
-[Line 2573 Sent Fairytale2.37]: [L3 SYNTAX obl-should-be-nmod] The parent (node [4] 'σοιρίδι') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
 [Line 4129 Sent Fairytale5.67]: [L3 SYNTAX leaf-det] 'det' not expected to have children (10:το:det --> 8:τα:expl)
 [Line 4297 Sent Fairytale5.76]: [L3 SYNTAX too-many-objects] Multiple direct objects [10, 20] ('τα', 'τζουφάλε') under the predicate 'δόσ’'.
-[Line 4936 Sent Fairytale5.104]: [L3 SYNTAX obl-should-be-nmod] The parent (node [7] 'τσάρι') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
 [Line 5234 Sent Fairytale6.13]: [L3 SYNTAX too-many-objects] Multiple direct objects [5, 7] ('dα', 'νομάτ') under the predicate 'ποίτζεν'.
 Warnings: 56
-SYNTAX errors: 6
-*** FAILED *** with 6 errors
+SYNTAX errors: 4
+*** FAILED *** with 4 errors
 Exit code: 1
 Validity: 0.01
 (weight=0.111111111111111) * (score{features}=1) = 0.111111111111111
